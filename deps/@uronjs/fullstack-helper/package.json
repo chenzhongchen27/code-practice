@@ -1,0 +1,25 @@
+{
+  "name": "@uronjs/fullstack-helper",
+  "version": "0.0.1",
+  "description": "launch and build uron project",
+  "bin": {
+    "uron-fullstack-dev": "./bin/uron-dev.js",
+    "uron-fullstack-build": "./bin/uron-build.js",
+    "uron-fullstack-start": "./bin/uron-start.js"
+  },
+  "author": "lingximu(lingxiweb@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "commander": "^2.11.0",
+    "debug": "^3.1.0",
+    "opn": "^5.1.0",
+    "koa-webpack-middleware": "^1.0.7",
+    "semver": "^5.4.1",
+    "vusion-cli": "~0.7.4",
+    "shelljs": "^0.8.2",
+    "koa-static": "^4.0.2"
+  },
+  "devDependencies": {
+  }
+}

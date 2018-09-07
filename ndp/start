@@ -1,0 +1,5 @@
+#!/bin/sh
+. ~/.nvm/nvm.sh
+nvm --version
+nvm use 8.9.3
+pm2 start apps.config.js

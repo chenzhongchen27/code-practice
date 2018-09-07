@@ -1,0 +1,68 @@
+{
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onSave",
+    "editor.formatOnPaste": false,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "html",
+            "autoFix": true
+        }
+    ],
+    // 需要安装 better-comments ，可以提供一致的注释高亮规则
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false
+        },
+        {
+            "tag": "////",
+            "color": "#474747",
+            "strikethrough": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false
+        },
+        {
+            "tag": "fixme",
+            "color": "#98C379",
+            "strikethrough": false
+        },
+        {
+            "tag": "*"
+        }
+    ],
+    "css.validate": false,
+    "terminal.integrated.scrollback": 50000,
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "prettier.eslintIntegration": true,
+    "editor.formatOnSave": false,
+    "prettier.tabWidth": 4,
+    "editor.quickSuggestions": {
+
+        "other": true,
+
+        "comments": true,
+
+        "strings": true
+
+    },
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+}

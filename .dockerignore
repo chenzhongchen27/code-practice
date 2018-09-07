@@ -1,0 +1,4 @@
+.vscode
+src/config/.env*
+src/config/local.js
+.DS_Store

@@ -1,0 +1,52 @@
+#!/usr/bin/env node
+
+/**
+ * Install npm packages
+ */
+const spawnSync = require('child_process').spawnSync;
+function printStart(str) {
+    console.log();
+    console.log(`*****************${str} start …… *******************`);
+    console.log();
+}
+function printEnd(str) {
+    console.log();
+    console.log(`*****************${str} end!*******************`);
+    console.log();
+}
+function printInfo(str) {
+    console.log();
+    console.log(str);
+    console.log();
+}
+
+// npm install -g yarn shelljs
+printStart('npm install -g yarn shelljs');
+const yarnResult = spawnSync('npm', ['--registry=http://rnpm.hz.netease.com/', '--registryweb=http://npm.hz.netease.com/', 'install', '-g', 'yarn', 'shelljs']);
+if (yarnResult.status)
+    throw new Error(String(yarnResult.stderr));
+printEnd('npm install -g yarn shelljs');
+
+const shell = require('shelljs');
+
+// print config info
+printStart('print config info');
+printInfo('node version');
+shell.exec('node -v');
+printInfo('npm version');
+shell.exec('npm -v');
+printInfo('npm config');
+shell.exec('npm config ls');
+printEnd('print config info');
+
+// install
+printStart('yarn install');
+shell.exec('yarn install');
+printEnd('yarn install');
+
+/**
+ * Build
+ */
+printStart('npm run buld');
+const result = shell.exec('npm run build');
+printEnd('npm run buld');

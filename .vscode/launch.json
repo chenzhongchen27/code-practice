@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "dev",
+            "restart": false,
+            "cwd": "${workspaceRoot}",
+            "args": ["./node_modules/@uronjs/fullstack-helper/bin/uron-dev.js","|","bunyan","-L"],
+            "console": "integratedTerminal",
+            "env": {
+                "DEBUG": "*,-babel",
+                "NODE_ENV": "development",
+                "DEBUG_COLORS": "true",
+                "FORCE_COLOR": "1"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "start",
+            "restart": false,
+            "cwd": "${workspaceRoot}",
+            "args": ["./node_modules/@uronjs/fullstack-helper/bin/uron-fullstack-start","|","bunyan","-L"],
+            "console": "integratedTerminal",
+            "env": {
+                "DEBUG": "*,-babel",
+                "NODE_ENV": "production",
+                "DEBUG_COLORS": "true",
+                "FORCE_COLOR": "1",
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "build",
+            "restart": false,
+            "cwd": "${workspaceRoot}",
+            "args": ["./node_modules/@uronjs/fullstack-helper/bin/uron-fullstack-build"],
+            "console": "integratedTerminal",
+            "env": {
+                "DEBUG": "*,-babel",
+                "NODE_ENV": "production",
+                "DEBUG_COLORS": "true",
+                "FORCE_COLOR": "1",
+            }
+        },
+        {
+            "name": "node",
+            "type": "node",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+    ]
+}

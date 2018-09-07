@@ -1,0 +1,27 @@
+{
+  "defaultEnv": "local",
+  "local": {
+    "driver": "mysql",
+    "host": {"ENV":"local_db_host"},
+    "database": {"ENV":"local_db_database"},
+    "user": {"ENV":"local_db_user"},
+    "password": {"ENV":"local_db_password"},
+    "multipleStatements": true
+  },
+  "dev": {
+    "driver": "mysql",
+    "host": {"ENV":"dev_db_host"},
+    "database": {"ENV":"dev_db_database"},
+    "user": {"ENV":"dev_db_user"},
+    "password": {"ENV":"dev_db_password"},
+    "multipleStatements": true
+  },
+  "test": {
+    "driver": "mysql",
+    "host": {"ENV":"test_db_host"},
+    "database": {"ENV":"test_db_database"},
+    "user": {"ENV":"test_db_user"},
+    "password": {"ENV":"test_db_password"},
+    "multipleStatements": true
+  }
+}
