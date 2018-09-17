@@ -1,4 +1,3 @@
-![](http://img-mk.lingximu.com/f8c0ca9b79104567baf2c7626f8eb2b3.png)
 // ![](http://img-mk.lingximu.com/199c0c844159f5e40ebc63bc87c51ce9.png)
 // ![](http://img-mk.lingximu.com/21c44a4aab619c15769de72d2adf8b0e.png)
 
