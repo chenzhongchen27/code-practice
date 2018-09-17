@@ -24,3 +24,34 @@ function parse(arr) {
 
     return result;
 }
+
+const obj = [{
+    _id: 1,
+    parent: null,
+    children: [{
+        _id: 2,
+        parent: 1,
+    }, {
+        _id: 3,
+        parent: 1,
+        children: [{
+            _id: 5,
+            parent: 3,
+        }, {
+            _id: 6,
+            parent: 3,
+        }],
+    }, {
+        _id: 4,
+        parent: 1,
+    }],
+}];
+// 结果
+// [ { _id: 1 },
+//     { _id: 2, parent: 1 },
+//     { _id: 3, parent: 1 },
+//     { _id: 5, parent: 3 },
+//     { _id: 6, parent: 3 },
+//     { _id: 4, parent: 1 } ]
+
+console.log(parse(obj));
