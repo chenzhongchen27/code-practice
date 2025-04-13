@@ -25,6 +25,7 @@ function calLastChar(str) {
             book[current] = true;
         }
     }
+    return null;
 }
 
 // const str = 'BACCAAHEFGHFF';
